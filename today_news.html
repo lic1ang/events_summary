@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>今日新闻 - 2026年4月2日</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        header {
+            text-align: center;
+            color: white;
+            padding: 40px 0;
+        }
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+        }
+        header .date {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+        .news-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 20px;
+            padding: 20px 0;
+        }
+        .news-card {
+            background: white;
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .news-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+        }
+        .news-card .category {
+            padding: 15px 20px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        .news-card.politics .category { background: linear-gradient(135deg, #e74c3c, #c0392b); color: white; }
+        .news-card.tech .category { background: linear-gradient(135deg, #3498db, #2980b9); color: white; }
+        .news-card.finance .category { background: linear-gradient(135deg, #f39c12, #d68910); color: white; }
+        .news-card.sports .category { background: linear-gradient(135deg, #27ae60, #1e8449); color: white; }
+        .news-card.local .category { background: linear-gradient(135deg, #9b59b6, #8e44ad); color: white; }
+        .news-card.world .category { background: linear-gradient(135deg, #1abc9c, #16a085); color: white; }
+        .news-card .content {
+            padding: 20px;
+        }
+        .news-card h3 {
+            font-size: 1.1rem;
+            color: #2c3e50;
+            margin-bottom: 12px;
+            line-height: 1.4;
+        }
+        .news-card p {
+            font-size: 0.95rem;
+            color: #7f8c8d;
+            line-height: 1.6;
+        }
+        .news-card .time {
+            display: inline-block;
+            margin-top: 15px;
+            font-size: 0.8rem;
+            color: #bdc3c7;
+        }
+        .weather-widget {
+            background: white;
+            border-radius: 16px;
+            padding: 25px;
+            margin-bottom: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+        .weather-widget h2 {
+            color: #2c3e50;
+            margin-bottom: 15px;
+            font-size: 1.3rem;
+        }
+        .weather-widget .temp {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: #667eea;
+        }
+        .weather-widget .desc {
+            color: #7f8c8d;
+            margin-top: 10px;
+        }
+        footer {
+            text-align: center;
+            color: white;
+            padding: 40px 0;
+            opacity: 0.8;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>📰 今日新闻</h1>
+            <p class="date">2026年4月2日 星期四</p>
+        </header>
+
+        <div class="weather-widget">
+            <h2>🌤️ 上海天气</h2>
+            <div class="temp">12°C - 23°C</div>
+            <p class="desc">多云转多云到阴，白天有阳光助力，气温进一步抬升。周五将有明显降雨并伴有大风，清明假期天气以多云为主，最高气温升至25°C。</p>
+        </div>
+
+        <div class="news-grid">
+            <div class="news-card politics">
+                <div class="category">🏛️ 国际要闻</div>
+                <div class="content">
+                    <h3>特朗普将就伊朗问题发表全国讲话</h3>
+                    <p>白宫表示，特朗普将于美东时间晚上9点（北京时间4月2日上午9点）发表全国讲话，提供关于伊朗局势的重要更新。伊朗、黎巴嫩真主党和也门胡塞武装同时袭击以色列。</p>
+                    <span class="time">来源：东方财富</span>
+                </div>
+            </div>
+
+            <div class="news-card tech">
+                <div class="category">🚀 科技动态</div>
+                <div class="content">
+                    <h3>小米雷军今晚直播拆解SU7</h3>
+                    <p>小米集团创始人雷军宣布将于4月2日晚上7点开启长达5小时直播，现场拆解一台新SU7。2026款小鹏MONAM03也将于今日正式上市，搭载图灵AI芯片，拥有750Tops算力。</p>
+                    <span class="time">来源：东方财富</span>
+                </div>
+            </div>
+
+            <div class="news-card tech">
+                <div class="category">🔬 科技突破</div>
+                <div class="content">
+                    <h3>上海"人造太阳"刷新世界纪录</h3>
+                    <p>由临港企业能量奇点打造的全球首台全高温超导托卡马克装置"洪荒70"成功实现1337秒稳态长脉冲运行，刷新商业核聚变世界纪录。</p>
+                    <span class="time">来源：网易新闻</span>
+                </div>
+            </div>
+
+            <div class="news-card finance">
+                <div class="category">💰 财经资讯</div>
+                <div class="content">
+                    <h3>上海楼市迎来回暖行情</h3>
+                    <p>2026年3月，上海二手房成交31215套，创近五年新高、十年同期次高；房价结束33个月连跌。新房市场同步复苏，政策红利持续释放。</p>
+                    <span class="time">来源：网易新闻</span>
+                </div>
+            </div>
+
+            <div class="news-card finance">
+                <div class="category">📈 市场动态</div>
+                <div class="content">
+                    <h3>美元指数突破100关口</h3>
+                    <p>美国当周初请失业金人数20.2万，创近两个月新低，劳动力市场韧性强化美联储高利率维持预期，美元指数大涨0.49%突破100关口。</p>
+                    <span class="time">来源：中国黄金网</span>
+                </div>
+            </div>
+
+            <div class="news-card sports">
+                <div class="category">🏆 体育新闻</div>
+                <div class="content">
+                    <h3>上海女排时隔25年再夺联赛冠军</h3>
+                    <p>2025-2026赛季中国女子排球超级联赛落幕，上海光明优倍女排在决赛第三回合主场3比0横扫江苏女排，以总比分2比1夺得冠军。王唯漪当选赛季MVP。</p>
+                    <span class="time">来源：网易新闻</span>
+                </div>
+            </div>
+
+            <div class="news-card sports">
+                <div class="category">⚽ 体育赛事</div>
+                <div class="content">
+                    <h3>2026世界杯48强全部产生</h3>
+                    <p>伊拉克在洲际附加赛决赛中2比1战胜玻利维亚，搭上通往世界杯末班车，2026美加墨世界杯48支参赛球队全部产生。中国U20女足亚洲杯首战3比0胜越南。</p>
+                    <span class="time">来源：网易新闻</span>
+                </div>
+            </div>
+
+            <div class="news-card local">
+                <div class="category">🏙️ 上海本地</div>
+                <div class="content">
+                    <h3>上海科技馆"雨林秘境"展区开放</h3>
+                    <p>上海科技馆升级改造的"雨林秘境"展区正式面向公众开放，作为十大常设展区中面积最大的展区，让市民足不出沪体验西双版纳雨林魅力。</p>
+                    <span class="time">来源：网易新闻</span>
+                </div>
+            </div>
+
+            <div class="news-card world">
+                <div class="category">🌍 国际动态</div>
+                <div class="content">
+                    <h3>索尼全球上调PS5价格</h3>
+                    <p>索尼集团决定在全球范围内上调PS5、PS5 PRO及PlayStation Portal遥控器的价格，自4月2日起生效。日本关东地区发生5级地震，东京震感明显。</p>
+                    <span class="time">来源：东方财富/网易新闻</span>
+                </div>
+            </div>
+
+            <div class="news-card local">
+                <div class="category">🏛️ 展览活动</div>
+                <div class="content">
+                    <h3>上海久事美术馆新馆启用</h3>
+                    <p>上海久事美术馆新馆在外滩1号正式启用，首展"把万物进行到底"同步启幕，汇集9位国际当代艺术家，将持续展至6月28日。</p>
+                    <span class="time">来源：网易新闻</span>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <p>新闻内容来源于公开网络 | 仅供参考</p>
+        </footer>
+    </div>
+</body>
+</html>
